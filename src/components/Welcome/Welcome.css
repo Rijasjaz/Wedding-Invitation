@@ -1,0 +1,5 @@
+.welcome { min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--cream); border-radius: 32px 32px 0 0; margin-top: -32px; z-index: 10; }
+.welcome__bismillah { color: var(--gold); font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.6; }
+.welcome__meaning { font-size: var(--fs-small); color: var(--clay); margin-top: 0.5rem; }
+.welcome__title { font-size: var(--fs-hero); margin: 2.5rem 0 1.5rem; font-style: italic; font-weight: 300; }
+.welcome__text { max-width: 34rem; }

@@ -1,0 +1,15 @@
+:root {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+  --fs-hero: clamp(3rem, 9vw, 6.5rem);
+  --fs-h2: clamp(2.3rem, 6vw, 4rem);
+  --fs-h3: clamp(1.4rem, 3vw, 1.9rem);
+  --fs-body: clamp(1rem, 1.6vw, 1.12rem);
+  --fs-small: 0.85rem;
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 350; color: var(--wine); line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+p { font-size: var(--fs-body); line-height: 1.75; margin: 0; }
+.arabic { font-family: var(--font-arabic); direction: rtl; }

@@ -1,0 +1,14 @@
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 1s ease, transform 1s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@keyframes float { 50% { transform: translateY(-14px); } }
+@keyframes drift { 50% { transform: rotate(calc(var(--rotation) + 1.5deg)) translate(3px, -3px); } }
+@keyframes fall {
+  0% { transform: translate(0, -10vh) rotate(0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translate(var(--sway), 115vh) rotate(var(--spin)); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation: none !important; }
+}

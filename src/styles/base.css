@@ -1,0 +1,8 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: hidden; background: var(--blush); color: var(--ink); font-family: var(--font-body); font-weight: 400; }
+img { max-width: 100%; display: block; }
+section { scroll-margin-top: 90px; }
+.section { position: relative; overflow: hidden; padding: clamp(5rem, 12vw, 8rem) 1.5rem; text-align: center; }
+.section > *:not(.decor) { position: relative; z-index: 2; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }

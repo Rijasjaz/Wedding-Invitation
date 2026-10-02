@@ -1,0 +1,13 @@
+.hero { position: relative; height: 100svh; overflow: hidden; }
+.hero__video, .hero__overlay { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero__video { object-fit: cover; }
+.hero__overlay { background: linear-gradient(rgba(62, 18, 29, 0.35), rgba(62, 18, 29, 0.2)); }
+.hero__stage { position: relative; z-index: 2; height: 100%; display: grid; place-items: center; }
+.hero__hint {
+  position: absolute; bottom: max(40px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); z-index: 5;
+  display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 22px; border-radius: 999px;
+  background: var(--glass); backdrop-filter: blur(12px); color: var(--wine); text-decoration: none;
+  font-size: var(--fs-small); font-weight: 500; opacity: 0; pointer-events: none; transition: opacity 1s ease 3s;
+}
+.hero__hint.is-shown { opacity: 1; pointer-events: auto; }
+.hero__hint span { animation: float 2s ease-in-out infinite; }

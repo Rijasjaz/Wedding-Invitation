@@ -1,0 +1,8 @@
+.ceremony { background: var(--blush); min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ceremony h2 { margin-bottom: 3rem; }
+.ceremony__card { width: 100%; max-width: 26rem; padding: 3.5rem 2rem 2.5rem; background: var(--cream); border: 1px solid var(--gold); border-radius: 999px 999px 28px 28px; box-shadow: var(--shadow-soft); }
+.ceremony__icon { width: 92px; height: 92px; object-fit: contain; margin: 0 auto 1rem; }
+.ceremony__details { margin: 2rem 0 0; display: grid; }
+.ceremony__details div { padding: 1.1rem 0; border-top: 1px solid var(--rose); }
+.ceremony__details dt { font-size: var(--fs-small); color: var(--clay); font-weight: 500; }
+.ceremony__details dd { margin: 0.25rem 0 0; font-family: var(--font-display); font-size: var(--fs-h3); color: var(--wine); }

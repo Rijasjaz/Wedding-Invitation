@@ -1,0 +1,11 @@
+.nav {
+  position: fixed; top: 20px; left: 50%; z-index: 1000; display: flex; align-items: center; gap: 1.5rem;
+  padding: 0.7rem 1.6rem; border-radius: 999px; background: var(--wine); box-shadow: var(--shadow-soft);
+  opacity: 0; transform: translate(-50%, -20px); pointer-events: none; transition: 0.6s ease;
+}
+.nav.is-visible { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+.nav__mark { font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); }
+.nav__link { position: relative; color: var(--cream); text-decoration: none; font-size: var(--fs-small); font-weight: 500; }
+.nav__link::after { content: ""; position: absolute; left: 0; bottom: -6px; height: 2px; width: 0; background: var(--gold); transition: width 0.35s ease; }
+.nav__link.is-active::after { width: 100%; }
+@media (max-width: 768px) { .nav { gap: 1rem; padding: 0.6rem 1.1rem; } .nav__link:first-of-type { display: none; } }

@@ -1,0 +1,2 @@
+.petals { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 3; }
+.petal { position: absolute; top: 0; height: auto; animation: fall linear forwards; }

@@ -1,0 +1,5 @@
+.decor {
+  position: absolute; z-index: 0; width: clamp(120px, 20vw, 340px); opacity: 0.85;
+  pointer-events: none; user-select: none; transform: rotate(var(--rotation));
+  animation: drift 9s ease-in-out infinite;
+}

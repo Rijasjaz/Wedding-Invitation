@@ -1,0 +1,10 @@
+.location { background: var(--cream); }
+.location h2 { margin-bottom: 3rem; }
+.location__grid { display: grid; gap: 1.25rem; max-width: 62rem; margin: 0 auto; }
+.location__card { padding: 2.5rem 1.75rem; border-radius: 28px; background: var(--rose); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; }
+.location__address { font-style: normal; display: grid; color: var(--wine-deep); }
+.location__btn { padding: 0.9rem 2rem; border-radius: 999px; background: var(--wine); color: var(--cream); text-decoration: none; font-weight: 500; transition: 0.3s ease; }
+.location__btn:hover { background: var(--wine-deep); transform: translateY(-2px); }
+.location__map { min-height: 320px; border-radius: 28px; overflow: hidden; border: 1px solid var(--gold); }
+.location__map iframe { width: 100%; height: 100%; min-height: 320px; border: 0; filter: sepia(0.25) saturate(0.9); }
+@media (min-width: 860px) { .location__grid { grid-template-columns: 1fr 1.4fr; } }

@@ -1,0 +1,7 @@
+.ending { min-height: 80svh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--wine-deep); }
+.ending__names { color: var(--cream); font-size: clamp(2.8rem, 8vw, 5.5rem); font-weight: 300; display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 0.3em; font-style: italic; }
+.ending__amp { color: var(--gold); font-size: 0.85em; }
+.ending__heart { font-size: 2.5rem; color: var(--gold); margin: 1.25rem 0; }
+.ending__date { font-family: var(--font-display); font-size: var(--fs-h3); color: var(--cream); }
+.ending__hijri { color: var(--rose); }
+@media (max-width: 768px) { .ending__names { flex-direction: column; gap: 0; align-items: center; } }
