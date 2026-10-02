@@ -1,18 +1,38 @@
 import "./Envelope.css";
+
 export default function Envelope({ stage, onOpen }) {
-  if (stage === "open") {
-    return (
-      <div className="envelope">
-        <img src="/assets/envelope_back.png" alt="" className="envelope__back" />
-        <img src="/assets/invitation.png" alt="Wedding invitation card" className="envelope__card" />
-        <img src="/assets/envelope_front.png" alt="" className="envelope__front" />
-      </div>
-    );
-  }
+  const isOpening = stage === "opening";
+  const isOpen = stage === "open";
+
   return (
-    <button type="button" className={`envelope-closed ${stage === "opening" ? "is-fading" : ""}`}
-      onClick={onOpen} aria-label="Tap to open the invitation">
-      <img src="/assets/envelope_closed.png" alt="" />
-    </button>
+    <section
+      className={`simple-opening ${
+        isOpening ? "simple-opening--opening" : ""
+      } ${isOpen ? "simple-opening--open" : ""}`}
+    >
+      <div className="simple-opening__content">
+        <p className="simple-opening__subtitle">Together with their families</p>
+
+        <div className="simple-opening__names">
+          <h2>Rijas</h2>
+          <span>&amp;</span>
+          <h2>Rifana</h2>
+        </div>
+
+        <div className="simple-opening__line" />
+
+        {/* <p className="simple-opening__date">03 January 2027</p> */}
+
+        <button
+          type="button"
+          className="simple-opening__button"
+          onClick={onOpen}
+          disabled={isOpening || isOpen}
+          aria-label="Open wedding invitation"
+        >
+          Open Invitation
+        </button>
+      </div>
+    </section>
   );
 }
